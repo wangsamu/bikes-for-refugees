@@ -47,7 +47,7 @@ p {
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: left;
   height: 5rem;
   margin-bottom: 1rem;
   padding-top: 1rem;
@@ -63,10 +63,11 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 20px;
 }
 
 .navigation__link {
@@ -96,7 +97,31 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+  .button-primary {
+    background: #ce5f31;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+  }
 
+  .button-primary:hover,
+  .button-primary:focus {
+    background: #ef7f52;
+  }
+
+  .button-secondary {
+    background: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: #ce5f31;
+  }
+
+  .button-secondary:hover,
+  .button-secondary:focus {
+    background: rgb(231, 200, 172);
+  }
 
 /* Content */
 
@@ -120,18 +145,24 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  padding: 30px;
+  padding-top: 45px;
+  padding-bottom: 70px;
+  background-image: url(/images/header-bike.jpg);
   background-color: var(--grey-light);
+  color: #fff;
+  margin-bottom: 50px;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+
 }
 
 .hero p {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 
@@ -161,8 +192,30 @@ p {
 
 /* Article */
 
+.article-wrapper {
+  display:inline-flex;
+  justify-content: space-between;
+}
+
+.article-wrapper .article {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-wrapper .article:hover {
+background-color: #e4e4e4;
+}
+
 .article {
   margin-bottom: 1rem;
+  display: flex;
+    border: 2px solid #5a54596f; 
+    padding: 12px;
+    border-radius: 8px;
+}
+.article__content {
+  margin-left: 10px;
 }
 
 .article__title {
@@ -173,7 +226,7 @@ p {
 
 .article__title-link {
   text-decoration: none;
-  color: var(--orange-dark);
+  color: rgb(83, 83, 212);
 }
 
 .article__summary {
@@ -193,7 +246,7 @@ p {
 .article__read-more a {
   font-size: 0.85rem;
   font-weight: 700;
-  color: var(--orange-dark);
+  color: var(blue);
   text-decoration: none;
 }
 
@@ -204,11 +257,11 @@ p {
 
 .fa {
   margin-right: 0.5rem;
-  color: var(--orange-dark);
+  color: var(blue);
 }
 
 .facebook-link {
-  color: var(--orange-dark);
+  color: var(blue);
 }
 
 /* Sidebar */
