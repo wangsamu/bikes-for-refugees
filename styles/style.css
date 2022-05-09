@@ -67,12 +67,13 @@ p {
 }
 
 .navigation__item {
-  padding: 20px;
+  padding: 25px;
+  border: 1px solid transparent
 }
 
 .navigation__link {
   color: var(--grey-dark);
-  font-weight: 600;
+  font-weight: 800;
   text-transform: uppercase;
   text-decoration: none;
 }
